@@ -1,0 +1,19 @@
+{
+  "name": "implementing-modals",
+  "version": "1.0.0",
+  "description": "'Simple Example Implementing Modals using Chaplin JS'",
+  "main": "null",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "'chaplin'"
+  ],
+  "author": "Anoop M D",
+  "license": "MIT",
+  "devDependencies": {
+    "css-brunch": "^2.0.0",
+    "handlebars-brunch": "^2.0.1",
+    "javascript-brunch": "^2.0.0"
+  }
+}

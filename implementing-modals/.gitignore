@@ -1,0 +1,5 @@
+# Bower stuff.
+bower_components/
+
+# Node Modules
+node_modules/
