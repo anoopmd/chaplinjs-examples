@@ -1,0 +1,43 @@
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<script src = "./bower_components/requirejs/require.js"></script>
+
+<script type="text/javascript">
+  require.config({
+    paths : {
+      "jquery" : "./bower_components/jquery/dist/jquery.min",
+      "underscore" : "./bower_components/underscore-amd/underscore-min",
+      "backbone" : "./bower_components/backbone-amd/backbone-min",
+      "chaplin" : "./bower_components/chaplin/chaplin"
+    }
+  });
+</script>
+
+<script type="text/javascript">
+require(['chaplin', 'jquery'], function(Chaplin, $) {
+  var HelloWorldView = Chaplin.View.extend({
+    autoRender : true,
+    getTemplateFunction  : function(){
+      return function(){
+        return 'Hello World'
+      }
+    }
+  });
+
+  var helloWorldView = new HelloWorldView({
+    container  : "#page",
+  });
+});
+</script>
+
+</head>
+
+<body>
+  <div id = "page">
+  </div>
+</body> 
+
+</html>
